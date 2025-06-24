@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-material-blog pymdown-extensions python-markdown-math
+          pip install mkdocs mkdocs-material pymdown-extensions python-markdown-math
 
       - name: Setup Git
         run: |
