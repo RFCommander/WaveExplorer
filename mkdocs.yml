@@ -1,6 +1,6 @@
-site_name: A nice website
-site_description: A personal blog powered by MkDocs
-site_url: https://example.com/  # Replace with your GitHub Pages URL
+site_name: WaveExplorer
+site_description: My personal technical ramblings
+site_url: https://rfcommander.github.io/WaveExplorer/  # Replace with your GitHub Pages URL
 
 plugins:
   - blog:
@@ -10,13 +10,20 @@ plugins:
       post_url_format: "{date}/{slug}"
       post_readtime: true
       archive: false
-      categories: false
-      categories_toc: false
+      categories: true
+      categories_toc: true
       pagination: true
       pagination_per_page: 5
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
       pagination_if_single_page: false
       post_excerpt: required
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
   - search
 theme:
   name: material
@@ -31,15 +38,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -74,4 +81,5 @@ extra_css:
 nav:
   - Home: index.md
   - Blog: blog/index.md
-
+  - Categories:
+    - blog/category/technology.md
