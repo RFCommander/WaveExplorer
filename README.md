@@ -17,6 +17,7 @@ This is a blog built with MkDocs and the Material theme.
    ```
 
 
+
 ## Adding New Posts
 
 1. Create a new markdown file in the `docs/blog` directory
@@ -31,6 +32,7 @@ This is a blog built with MkDocs and the Material theme.
    ```bash
    mkdocs gh-deploy
    ```
+test
 
 ## Features
 
