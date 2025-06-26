@@ -16,11 +16,6 @@ This is a blog built with MkDocs and the Material theme.
    mkdocs serve
    ```
 
-3. Build the site:
-
-   ```bash
-   mkdocs build
-   ```
 
 ## Adding New Posts
 
